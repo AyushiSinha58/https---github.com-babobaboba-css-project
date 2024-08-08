@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh; 
+    background-image: url('../wallpaper/background.jpg');
+    z-index: -15; 
+    position: relative; 
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.translucent-square {
+    width: 85%;  
+    height: 80%; 
+    padding: 150px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; 
+}
+
+
+.homeScreen {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    position: relative;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #8e9eff, #5e3a78); 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+
+.progress-fill {
+    height: 100%;
+    background: #9d9d9d;
+    width: 0; 
+    transition: width 1s ease;
+    border-radius: 15px 0 0 15px; 
+}
+
+.progress-text {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
